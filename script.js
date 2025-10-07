@@ -25,12 +25,12 @@ function initializeGame () {
   running = true
 }
 function boxClicked () {
-  const cellIndex = this.getAttribute('cellIndex')
-  if (options[cellIndex] !== '' || !running) {
+  const cellindex = this.getAttribute('cellindex')
+  if (options[cellindex] !== '' || !running) {
     return
   }
 
-  updateBox(this, cellIndex)
+  updateBox(this, cellindex)
   checkWinner()
 }
 function updateBox (box, index) {
