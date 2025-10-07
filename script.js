@@ -72,7 +72,7 @@ function resetGame () {
   currentPlayer = 'X'
   options = ['', '', '', '', '', '', '', '', '']
   statusText.textContent = `${currentPlayer}'s turn`
-  boxes.forEach(function(box){
+  boxes.forEach (function(box) {
     box.textContent = ''
   })
   running = true
