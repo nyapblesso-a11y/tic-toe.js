@@ -1,5 +1,5 @@
 const boxes = document.querySelectorAll('.box')
-const statusText = document.querySelector('#statusText')
+const statusText = document.querySelector('#status-text')
 const reset = document.querySelector('.reset')
 const winConditions = [
   [0, 1, 2],
@@ -25,12 +25,12 @@ function initializeGame () {
   running = true
 }
 function boxClicked () {
-  const cellindex = this.getAttribute('cellindex')
-  if (options[cellindex] !== '' || !running) {
+  const cellIndex = this.getAttribute('cellindex')
+  if (options[cellIndex] !== '' || !running) {
     return
   }
 
-  updateBox(this, cellindex)
+  updateBox(this, cellIndex)
   checkWinner()
 }
 function updateBox (box, index) {
